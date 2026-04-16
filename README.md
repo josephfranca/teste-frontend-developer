@@ -58,6 +58,8 @@ Boa sorte! Use sua criatividade e mostre do que você é capaz.
 Ps Cortes
 Projeto de landing page com integração com backend.
 
+A escolha da identidade visual foi escolhida baseado no estabelecimento do patrick, cores escuras com letras douradas.
+
 Tecnlogias Utilizadas
 
 * Frontend: HTML5, CSS3 e Javascript
@@ -76,6 +78,7 @@ Passo a Passo para rodar o projeto
 1. Preparação dos arquivos
    Certifique-se de que a pasta do projeto esteja dentro do diretório raiz do xampp:
    C:\xampp\htdocs\
+   
 2. A estrutura de pastas deve seguir este padrão:
 
  Assets
@@ -84,19 +87,19 @@ Passo a Passo para rodar o projeto
 
     Img/ — Identidade visual (Logo, Missão, Galeria).
 
-    Javascript/ — Scripts de animação e validação.
+    Javascript/ — Funções para mascáras, validações e animações.
 
  Backend
 
     bd.sql — Arquivo para importar no MySQL.
 
-    salvar.php — O "cérebro" que salva os dados.
+    salvar.php — Arquivo que contém a string de conexão com o banco de dados e que envia os dados que estiverem escritos no formulário para o banco de dados.
 
  Frontend
 
-    index.html — O formulário que o cliente vê.
+    index.html — Página da barbearia.
 
-4. Ajustes de comunicação entre as pastas
+3. Ajustes de comunicação entre as pastas
    * No index.html (Frontend):
      O formulário deve apontar para a pasta vizinha:
      <form action="../Backend/salvar.php" method="POST">
@@ -104,6 +107,7 @@ Passo a Passo para rodar o projeto
      O redirecionamento deve voltar para a pasta vizinha (Frontend)
      window.location.href='../Frontend/index.html';
      
-5. Acesso ao sistema
+4. Acesso ao sistema
    Certifique que o XAMPP esteja ligado e que as opções Apache e Mysql estejam ligadas, abra o seu navegador e digite o endereço baseado na pasta no htdocs:
    http://localhost/NOME_DA_SUA_PASTA/Frontend/index.html
+
