@@ -103,7 +103,7 @@ Passo a Passo para rodar o projeto
    * No index.html (Frontend):
      O formulário deve apontar para a pasta vizinha:
      
-     " <form action="../Backend/salvar.php" method="POST"> " (ignore os traços, servem apenas para exibir o comando escrito).
+     form action="../Backend/salvar.php" method="POST" (Para o comando funcionar precisa estar envolto de <>, foi a forma que encontrei para que aparecesse de maneira correta. ).
      
    * No salvar.php (Backend):
      O redirecionamento deve voltar para a pasta vizinha (Frontend)
