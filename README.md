@@ -77,26 +77,24 @@ Passo a Passo para rodar o projeto
    Certifique-se de que a pasta do projeto esteja dentro do diretório raiz do xampp:
    C:\xampp\htdocs\
 2. A estrutura de pastas deve seguir este padrão:
-   
- /teste-frontend-developer-main
-├── /Assets
-│   ├── /CSS                 # Arquivos de estilização (.css)
-│   ├── /Javascript          # Máscaras, validações e animações (.js)
-│   └── /Img                 # Identidade Visual e Imagens
-│       ├── /Galeria         # Fotos dos cortes e serviços
-│       ├── Background_header.png
-│       ├── Logo.png
-│       ├── Missao.png
-│       ├── patrick_sobrenos.png
-│       ├── Valores.png
-│       └── Visao.png
-│
-├── /Backend
-│   ├── bd.sql               # Script SQL para criação do banco e tabela
-│   └── salvar.php           # Conexão e lógica de envio para o banco
-│
-└── /Frontend
-    └── index.html           # Página principal (Interface)
+
+ Assets
+
+    CSS/ — Estilização do site.
+
+    Img/ — Identidade visual (Logo, Missão, Galeria).
+
+    Javascript/ — Scripts de animação e validação.
+
+ Backend
+
+    bd.sql — Arquivo para importar no MySQL.
+
+    salvar.php — O "cérebro" que salva os dados.
+
+ Frontend
+
+    index.html — O formulário que o cliente vê.
 
 4. Ajustes de comunicação entre as pastas
    * No index.html (Frontend):
