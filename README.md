@@ -102,10 +102,14 @@ Passo a Passo para rodar o projeto
 3. Ajustes de comunicação entre as pastas
    * No index.html (Frontend):
      O formulário deve apontar para a pasta vizinha:
-     <form action="../Backend/salvar.php" method="POST">
+     
+     '<form action="../Backend/salvar.php" method="POST">' (ignore as aspas simples, servem apenas para exibir o comando escrito).
+     
    * No salvar.php (Backend):
      O redirecionamento deve voltar para a pasta vizinha (Frontend)
-     window.location.href='../Frontend/index.html';
+     
+    'window.location.href='../Frontend/index.html';' (ignore as aspas simples, servem apenas para exibir o comando escrito).
+     
      
 4. Acesso ao sistema
    Certifique que o XAMPP esteja ligado e que as opções Apache e Mysql estejam ligadas, abra o seu navegador e digite o endereço baseado na pasta no htdocs:
