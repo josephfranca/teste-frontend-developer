@@ -77,11 +77,12 @@ Passo a Passo para rodar o projeto
    Certifique-se de que a pasta do projeto esteja dentro do diretório raiz do xampp:
    C:\xampp\htdocs\
 2. A estrutura de pastas deve seguir este padrão:
+   
  /teste-frontend-developer-main
 ├── /Assets
-│   ├── /CSS                 # estilização (.css)
-│   ├── /Javascript          # Funções para mascára, validações e animações (.js)
-│   └── /Img                 # Imagens e Identidade Visual
+│   ├── /CSS                 # Arquivos de estilização (.css)
+│   ├── /Javascript          # Máscaras, validações e animações (.js)
+│   └── /Img                 # Identidade Visual e Imagens
 │       ├── /Galeria         # Fotos dos cortes e serviços
 │       ├── Background_header.png
 │       ├── Logo.png
@@ -90,15 +91,14 @@ Passo a Passo para rodar o projeto
 │       ├── Valores.png
 │       └── Visao.png
 │
-├── /Backend                 
-│   ├── bd.sql               # Criação do banco de dados
-│   └── salvar.php           # Arquivo php para conexão com o banco de dados e para enviar os dados do formulário para o banco de dados
+├── /Backend
+│   ├── bd.sql               # Script SQL para criação do banco e tabela
+│   └── salvar.php           # Conexão e lógica de envio para o banco
 │
-├── /Frontend               
-│   └── index.html           # Página principal
-│
+└── /Frontend
+    └── index.html           # Página principal (Interface)
 
-3. Ajustes de comunicação entre as pastas
+4. Ajustes de comunicação entre as pastas
    * No index.html (Frontend):
      O formulário deve apontar para a pasta vizinha:
      <form action="../Backend/salvar.php" method="POST">
@@ -106,6 +106,6 @@ Passo a Passo para rodar o projeto
      O redirecionamento deve voltar para a pasta vizinha (Frontend)
      window.location.href='../Frontend/index.html';
      
-4. Acesso ao sistema
+5. Acesso ao sistema
    Certifique que o XAMPP esteja ligado e que as opções Apache e Mysql estejam ligadas, abra o seu navegador e digite o endereço baseado na pasta no htdocs:
    http://localhost/NOME_DA_SUA_PASTA/Frontend/index.html
