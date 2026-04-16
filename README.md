@@ -55,7 +55,7 @@ Template da página a ser desenvolvida
 Boa sorte! Use sua criatividade e mostre do que você é capaz.
 
 ------------------------------------------------------------------------------------------------------
-Ps Cortes
+Ps Cortes:
 Projeto de landing page com integração com backend.
 
 A escolha da identidade visual foi escolhida baseado no estabelecimento do patrick, cores escuras com letras douradas.
