@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ps cortes</title>
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+    <!--Adicionando a bibloteca font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../Assets/Img/Logo.jpg" alt="Logo">
+            </div>
+
+            <div class="textoHeader">
+                <p>Somos uma barbearia dedicada a oferecer os melhores cortes e atendimento
+                    de qualidade. Nosso objetivo é proporcionar estilo, conforto e confiança
+                    para cada cliente.
+                </p>
+            </div>
+        </header>
+        <!--Links que vão usar aquele sistema de ancoragem-->
+        <nav class="nav">
+            <a href="#cardMVV">Missão, visão e valores</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#galeria">Galeria de fotos</a>
+            <a href="#faq">Perguntas frequentes</a>
+        </nav>
+        <div class="containerMVV">
+            <div class="cardMVV">
+                <img src="../Assets/Img/Missão.png" alt="Missão">
+                <h1>Missão</h1>
+                <p>Oferecer uma experiência de cuidado pessoal inigualável, unindo sofisticação, conforto e serviços de
+                    alta performance para o homem que não abre mão do bem-estar.</p>
+            </div>
+
+            <div class="cardMVV" id="cardMVV">
+                <img src="../Assets/Img/Visão.png" alt="Visão">
+                <h1>Visão</h1>
+                <p>Ser reconhecida como a principal referência em barbearia tradicional na região, mantendo vivos os
+                    costumes e a elegância do cavalheiro moderno.</p>
+            </div>
+
+            <div class="cardMVV">
+                <img src="../Assets/Img/Valores.png" alt="Valores">
+                <h1>Valores</h1>
+                <p>Respeito à tradição, excelência no acabamento, hospitalidade e valorização do convívio social.</p>
+            </div>
+        </div>
+
+        <div class="containerSobre" id="sobre">
+            <h1>Sobre nós: seu estilo, nossa marca</h1>
+            <p>Mais do que uma barbearia de bairro, um espaço dedicado à sua autoestima. Na PS, acreditamos que um bom
+                corte tem o poder de mudar o seu dia. Por isso, aliamos um ambiente descontraído com o que há de melhor
+                em técnicas de barbearia clássica e moderna. Chegue, relaxe e saia pronto para qualquer desafio.</p>
+
+            <h2>A mente por trás da navalha, muito prazer, sou o Patrick!</h2>
+            <img src="../Assets/Img/patrick_sobrenos.jpg" alt="Patrick_sobrenos">
+            <p>Se você procura mais do que um corte comum, você está no lugar certo. Eu sou o Patrick, idealizador da PS
+                Cortes, e minha missão é garantir que você saia da minha cadeira melhor do que entrou.
+
+                Comecei na barbearia por paixão e transformei isso em um compromisso diário com a precisão. Para mim,
+                cada cliente é um amigo e cada corte é uma obra de arte única. No meu espaço, a prioridade é você: seu
+                estilo, seu tempo e sua satisfação. Vamos dar um tapa no visual?</p>
+
+            <br>
+        </div>
+
+        <div class="galeria" id="galeria">
+            <h2 class="galeriaTitulo">A arte da navalha</h2>
+            <img src="../Assets/Img/Galeria/foto1.png" onclick="expandir(this)" alt="corte1">
+            <img src="../Assets/Img/Galeria/foto2.png" onclick="expandir(this)" alt="corte2">
+            <img src="../Assets/Img/Galeria/foto3.png" onclick="expandir(this)" alt="corte3">
+            <img src="../Assets/Img/Galeria/foto4.png" onclick="expandir(this)" alt="corte4">
+            <img src="../Assets/Img/Galeria/foto5.png" onclick="expandir(this)" alt="corte5">
+            <img src="../Assets/Img/Galeria/foto6.png" onclick="expandir(this)" alt="corte6">
+        </div>
+
+        <div id="janela" class="modal" onclick="fechar()">
+            <span class="fechar">&times;</span>
+            <img id="img_expandida">
+        </div>
+
+        <div class="faq" id="faq">
+            <div class="faqContainer">
+                <h2>Perguntas frequentes</h2> <!--Talvez seja preciso mudar isso de lugar-->
+                <div class="faqItem">
+                    <button class="faqPergunta">Preciso agendar horário ou atendem por ordem de chegada?</button>
+                    <div class="faqResposta">
+                        <p>Cortamos apenas com horário marcado, prezamos muito pela organização de tempo.</p>
+                    </div>
+                </div>
+
+                <div class="faqItem">
+                    <button class="faqPergunta">Atendem crianças?</button>
+                    <div class="faqResposta">
+                        <p>Sim, atendemos o seu pequeno a partir dos 5 anos de idade.</p>
+                    </div>
+                </div>
+
+                <div class="faqItem">
+                    <button class="faqPergunta">Quais as formas de pagamentos aceitas?</button>
+                    <div class="faqResposta">
+                        <p>Aceitamos pix, cartões de crédito e débito, além também de dinheiro em espécie.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <section class="localizacao">
+            <div class="localContainer">
+                <div class="localInfo">
+                    <h2 class="localizacaoTitulo">Onde estamos</h2>
+                    <p i class="localizacaoMapa">Rua: Atlas, 30 - Vila Dinamarca (Guarulhos)</p>
+                    <p i class="horario">Segunda a Sábado: 09:00 às 18:00</p>
+                    <p i class="telefone">(11) 97122 - 7358</p>
+
+                    <a href="https://www.google.com/maps/dir//PS+Corte's+Barbearia,+R.+Atlas,+30+-+%C3%81gua+Chata,+Guarulhos+-+SP,+07251-180/@-23.4029056,-46.4125952,5632m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x94ce636a87c8b2cd:0xc08842279842352b!2m2!1d-46.4019026!2d-23.4296304?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" class="btnPadrao">Localização no google maps</a>
+                </div>
+
+                <div class="localMapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.0106986837723!2d-46.4018568!3d-23.4296915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce636a87c8b2cd%3A0xc08842279842352b!2sPS%20Corte&#39;s%20Barbearia!5e1!3m2!1spt-BR!2sbr!4v1776119386877!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" width="100%" height="350" <style="border: 0;"
+                        alllowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <section class="formulario">
+            <div class="formContainer">
+                <h2>Faça seu cadastro</h2>
+                <p>Preencha os campos abaixo para entrar na nossa lista de clientes</p>
+
+                <!--Formulário de contato-->
+                <form id="formCliente" action="../Backend/salvar.php" method="POST">
+                    <!--Campo para nome-->
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required></input>
+                    </div>
+                    <!--Campo para telefone-->
+                    <div class="campo">
+                        <label for="whatsapp">Telefone/Whatsapp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" maxlenght = "15" onkeyup="mascaraTelefone(this)" required></input>
+                    </div>
+                    <!--Campo para email-->
+                    <div class="campo">
+                        <label for="email">E-mail (Opcional)</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" onkeyup="mascaraEmail(this)"></input>
+                    </div>
+                    <!--Campo para mensagens-->
+                    <div class="campo">
+                        <label for="mensagem">Comentários, críticas ou elogios</label>
+                        <textarea name="mensagem" id="mensagem" rows="4" placeholder="Conte-nos o que sente."></textarea>
+                    </div>
+
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footerContainer">
+                <div class="footerLogo">
+                    <h2>PS <span>Cortes</span></h2>
+                </div>
+
+                <div class="footerSocial">
+                    <!--Link do insta-->
+                    <a href="https://www.instagram.com/ps_barbeiro/" target="_blank" class="socialIcone" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <!--Link do whatsapp-->
+                    <a href="https://wa.me/11971227358" target="_blank" class="socialIcone" aria-label="Whatsapp">
+                        <i class="fab - fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://sites.appbarber.com.br/pscortesbarbearia" aria-label="Agendamento">
+                        <i class="fa-solid fa-book"></i>
+                    </a>
+                </div>
+                <div class="footerCopy">
+                    <p>&copy; 2026 PS Cortes. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div> <!--fim da div container-->
+    <script src="../Assets/Javascript/script.js"></script>
+</body>
+
+</html>
